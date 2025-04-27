@@ -22,6 +22,9 @@ The `main.py` file serves as a client application that interacts with the MCP se
 
 The client application demonstrates how to integrate the Gemini API with the MCP server, creating a seamless experience where the LLM can interact with external tools through standardized interfaces.
 
+## Response example
+
+![Example response from Guini MCP](public/response.png)
 
 ## Requirements
 
