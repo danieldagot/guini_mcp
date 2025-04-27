@@ -24,8 +24,7 @@ The client application demonstrates how to integrate the Gemini API with the MCP
 
 ## Response example
 
-![Example response from Guini MCP](public/response.png)
-
+![Example response from Guini MCP](https://github.com/danieldagot/guini_mcp/blob/main/%C2%A0public/response.png)
 ## Requirements
 
 - Python 3.13
