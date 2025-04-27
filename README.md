@@ -61,12 +61,14 @@ This project uses [uv](https://github.com/astral-sh/uv), a fast Python package i
    ```bash
    uv pip install -e .
    ```
+5. Create an GEMINI API key from https://aistudio.google.com/apikey. 
 
-5. Set up environment variables:
+6. Set up environment variables:
    Create a `.env` file in the root directory with your Gemini API key:
    ```
    GEMINI_API_KEY=your_api_key_here
    ```
+
 
 ### Alternative: Using pip
 
