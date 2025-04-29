@@ -7,7 +7,7 @@ import os
 from dotenv import load_dotenv 
 load_dotenv()
 client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-model = "gemini-2.0-flash"
+model = "gemini-2.5-pro-exp-03-25"
 
 PROMPT = "list all partners from holon"
 
@@ -94,7 +94,7 @@ async def agent_loop(prompt: str, client: genai.Client, session: ClientSession):
             model=model,
             contents=contents,  # Send updated history
             config=types.GenerateContentConfig(
-                temperature=1.0,
+                temperature=0,
                 tools=[tools],
             ),  # Keep sending same config
         )
@@ -119,7 +119,7 @@ async def agent_loop(prompt: str, client: genai.Client, session: ClientSession):
             model=model,
             contents=contents,  # Send updated history
             config=types.GenerateContentConfig(
-                temperature=1.0,
+                temperature=0,
                 response_mime_type="application/json",
                 response_schema=response_schema,
             ),  # Keep sending same config
